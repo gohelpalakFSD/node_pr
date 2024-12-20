@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE Crud</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+</head>
+
+<body class="bg-gray-100" >
+
+    <header class="bg-red-600 text-white p-4">
+        <h1 class="text-3xl font-bold text-center">Movie Crud</h1>
+    </header>
+
+    <div class="flex justify-center items-center min-h-screen">
+        <form action="/insert" enctype="multipart/form-data" method="post" class="bg-white border border-gray-300 shadow-lg rounded-lg w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 p-5">
+            <h2 class="text-2xl font-semibold text-center mb-6">Add Movie</h2>
+            <div class="flex flex-col space-y-4">
+                <div class="relative">
+                    <label for="name" class="text-lg">Movie Name</label>
+                    <input type="text" id="name" name="movieName" placeholder="Enter Movie Name" class="mt-2 block w-full h-12 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200 ease-in-out">
+                </div>
+                <div class="relative">
+                    <label for="desc" class="text-lg">Description</label>
+                    <textarea id="desc" name="discription" placeholder="Enter Description" class="mt-2 block w-full h-24 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200 ease-in-out"></textarea>
+                </div>
+                <div class="relative">
+                    <label for="price" class="text-lg">Price</label>
+                    <input type="text" id="price" name="price" placeholder="Enter Price" class="mt-2 block w-full h-12 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200 ease-in-out">
+                </div>
+                <div class="relative">
+                    <label for="image" class="text-lg">Image</label>
+                    <input type="file" id="image" name="image" class="mt-2 block w-full border border-gray-300 rounded-lg p-2">
+                </div>
+                <div class="flex flex-col sm:flex-row sm:space-x-2">
+                    <button type="submit"class="bg-red-600 border border-red-600 shadow-md rounded-lg text-white py-2 px-4 hover:bg-red-700 transition duration-200 ease-in-out">Submit</button>
+                    <a href="/views" class="bg-gray-300 border border-gray-300 shadow-md rounded-lg text-gray-800 py-2 px-4 hover:bg-gray-400 transition duration-200 ease-in-out mt-2 sm:mt-0">View</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-red-600 text-white text-center p-4">
+        <p>&copy; 2023 Movie Verse. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
